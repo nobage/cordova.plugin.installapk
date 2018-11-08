@@ -4,7 +4,7 @@
 
 1. ionic2/3 安装插件
 
-    ionic cordova plugin add cordova.plugins.installApk
+    ionic cordova plugin add cordova.plugins.installapk
 2. 声明变量
 
     在使用之前声明：declare let installApk: any;
