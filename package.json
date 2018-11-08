@@ -1,5 +1,5 @@
 {
-  "name": "y",
+  "name": "installApkPermission",
   "version": "1.0.0",
   "description": "android API26及以上版本安装apk需要获取应用安装权限。\r 两个作用：一是检查当前应用是否具有应用安装权限，二是获取应用安装权限。",
   "main": "index.js",
