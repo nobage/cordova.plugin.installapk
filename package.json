@@ -1,23 +1,14 @@
 {
-  "name": "cordova.plugins.installapk",
-  "version": "1.0.1",
+  "name": "cordova.plugin.installapk",
+  "version": "1.0.2",
   "description": "android API26及以上版本安装apk需要获取应用安装权限。\r 两个作用：一是检查当前应用是否具有应用安装权限，二是获取应用安装权限。",
-  "cordova": {
-    "id": "cordova.plugins.installApk",
-    "platforms": [
-      "android"
-    ]
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/nobage/cordova.plugins.installApk.git"
-  },
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "install",
-    "permission"
+    "install permission",
+    "android api26"
   ],
   "author": "nobage",
   "license": "ISC"

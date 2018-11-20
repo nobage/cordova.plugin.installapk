@@ -1,21 +1,21 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin id="cordova.plugins.installApk" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
-    <name>InstallPermission</name>
+<plugin id="cordova.plugin.installapk" version="1.0.2" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>InstallApk</name>
 	<description>check and get install permission on android device,adapt to android api26 and above.</description>
     <author>nobage</author>
     <license>ISC</license>
-    <js-module name="InstallPermission" src="www/InstallPermission.js">
-        <clobbers target="installApk" />
+    <js-module name="InstallApk" src="www/InstallApk.js">
+        <clobbers target="InstallApk" />
     </js-module>
 	<platform name="android">
         <config-file parent="/*" target="res/xml/config.xml">
-            <feature name="InstallPermission">
-                <param name="android-package" value="cordova.plugins.install.permission.InstallPermission"/>
+            <feature name="InstallApk">
+                <param name="android-package" value="cordova.plugin.install.permission.InstallApk"/>
             </feature>
         </config-file>
         <config-file parent="/*" target="AndroidManifest.xml">
             <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
         </config-file>
-        <source-file src="src/android/InstallPermission.java" target-dir="src/cordova/plugins/install/permission"/>
+        <source-file src="src/android/InstallApk.java" target-dir="src/cordova/plugin/install/permission"/>
     </platform>
 </plugin>
